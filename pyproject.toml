@@ -1,0 +1,15 @@
+[project]
+name = "vaf-am-build-06-council"
+version = "1.0.0"
+requires-python = ">=3.11"
+description = "VAF AM Series: Parallel Investment Research Council — Built with Claude AI"
+dependencies = [
+    "anthropic>=0.40.0",
+    "pydantic>=2.10.0",
+    "pydantic-settings>=2.7.0",
+    "python-dotenv>=1.0.0",
+]
+[project.optional-dependencies]
+dev = ["pytest>=8.3.0", "pytest-asyncio>=0.24.0"]
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
